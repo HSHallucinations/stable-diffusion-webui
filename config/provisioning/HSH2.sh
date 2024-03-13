@@ -185,9 +185,9 @@ function provisioning_get_models() {
     done
 }
 
-function provisioning_get_from_gdrive () {
+function provisioning_get_from_gdrive() {
+    printf "\nDownloading from gdrive\n\n"
 
-    done
 }
 
 function provisioning_print_header() {
