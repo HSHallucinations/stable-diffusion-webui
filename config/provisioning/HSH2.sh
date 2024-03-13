@@ -187,6 +187,7 @@ function provisioning_get_models() {
 
 function provisioning_get_from_gdrive () {
 
+    done
 }
 
 function provisioning_print_header() {
