@@ -26,7 +26,7 @@ EXTENSIONS=(
     "https://github.com/adieyal/sd-dynamic-prompts"
 #    "https://github.com/ototadana/sd-face-editor"
     "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser"
-    "https://github.com/hako-mikan/sd-webui-regional-prompter"
+#    "https://github.com/hako-mikan/sd-webui-regional-prompter"
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
 #    "https://github.com/fkunn1326/openpose-editor"
 #    "https://github.com/Gourieff/sd-webui-reactor"
@@ -36,19 +36,26 @@ EXTENSIONS=(
  #   "https://github.com/alexandersokol/sd-model-organizer"
  #   "https://github.com/ThereforeGames/unprompted"
  #   "https://github.com/some9000/StylePile"
- #   "https://github.com/fishslot/video_loopback_for_webui"
+    "https://github.com/fishslot/video_loopback_for_webui"
  #   "https://github.com/kabachuha/sd-webui-text2video"
 )
 
+# https://civitai.com/models/143386?modelVersionId=191538 >>> IncredibleWorld4.0
+# https://civitai.com/models/319576?modelVersionId=368711 >>> 36-frames 2.0
+# https://civitai.com/models/123313?modelVersionId=158155 >>> ArtUniverse 8
+# https://civitai.com/models/257219?modelVersionId=293304 >>> AnyThing pruned
+# https://civitai.com/models/144249?modelVersionId=294575 >>> AnyMerge 2.7
+# &token=bb04f0ef2ace4632b95550cddd1213c1 civitToken
 CHECKPOINT_MODELS=(
-    "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
+#    "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
 #    "https://drive.google.com/file/d/1jWqlRVeW0wzGLfh-XGqow0m9Bhqg7Yhq"
 #    "https://drive.google.com/file/d/1Qskxu82pMNu2DZrojuBWu4TcKM0p-0xr"
-    #"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
-    #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
-    #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
-    "https://civitai.com/api/download/models/140540?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=bb04f0ef2ace4632b95550cddd1213c1"
-    "https://civitai.com/api/download/models/131530?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=bb04f0ef2ace4632b95550cddd1213c1"
+#    "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
+#    "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
+#    "https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
+    "https://civitai.com/models/144249?modelVersionId=294575"
+    "https://civitai.com/models/319576?modelVersionId=368711"
+    "https://civitai.com/models/143386?modelVersionId=191538"
 )
 
 LORA_MODELS=(
@@ -76,15 +83,15 @@ CONTROLNET_MODELS=(
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_mlsd-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_normal-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_openpose-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_scribble-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_seg-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_scribble-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_seg-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_canny-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_color-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_depth-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_keypose-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_openpose-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_style-fp16.safetensors"
 )
 
